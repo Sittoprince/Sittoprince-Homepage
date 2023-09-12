@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online order</title>
+</head>
+<style type="text/css">
+      main {
+
+         flex: 1 0 auto;
+
+      }
+      footer {
+         color: white;
+         background: transparent;
+         position: relative; /* required to position the copyright at the bottom */
+         font-size:80%;
+         margin: 0;
+         backdrop-filter: blur(5px);
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 20px;
+         background: white;
+         color: #162938;
+         /* positions the copyright at the bottom of the footer */
+         padding: 3px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         font-size: 15px;
+         margin: 0;
+      }
+      .footer-body {
+         margin-bottom: 0;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 20px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 150%;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 0px;
+         text-align: center;
+         font-size: 5px;
+      }
+      .footer-body li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 7px;
+         font-size:20px;
+         font-size: 15px;
+      }
+       * {  box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         
+      }
+      body{
+        background: url(picture.png);
+        min-height: 100vh;
+      }
+      #wrapper > div {
+        position:relative;
+         width:320px;
+         height:justify;
+         background: transparent;
+         color: white;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         border: 2px solid rgba(255,255,255,.5);
+         border-radius:10px;
+         margin-left: 20px;
+        justify-content: center;
+        align-items: center; 
+        backdrop-filter: blur(20px);
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+      .form-container {
+         justify-content: center;
+         align-items: center;
+         display:flex;
+         width:100%;
+         padding:40px;
+      }
+      .input-cnt{
+        position:relative;
+        width:260px;
+        height:50px;
+        border-bottom:2px solid;
+        margin:30px 0;
+      }
+      .input-cnt label {
+        position:absolute;
+        top:50%;
+        left:5px;
+        transform:translateY(-50%);
+        transition:5s;
+        font-size:1em;
+        font-weight:500;
+        pointer-events: none;
+        transition:.5s;
+      }
+      .input-cnt input {
+        width:100%;
+        height:100%;
+        background:transparent;
+        padding:0 35px 0 5px;
+        font-size:1em;
+        outline:none;
+        font-weight:600;
+        border:0;
+      }
+        .input-cnt label.active {
+       top: -5px;
+       font-size: 0.8em; /* Optional: reduce label size when moved up */
+}
+      .btn {
+        width:100%;
+        height:45px;
+        background: white;
+        border:0;
+        outline:0;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:1em;
+        color:#000;
+        font-weight: 500;
+      }
+       .close {
+        position:absolute;
+        top:0;
+        right:0;
+        height:30px;
+        width:30px;
+        background:#fff;
+        color:#162938;
+        font-size:1.5em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+        cursor:pointer;
+        z-index:1;
+        text-decoration: none;
+        border-bottom-left-radius: 10px;
+      }
+       .close a {
+        text-decoration: none;
+        color:#162938;
+      }
+    
+   </style>
+</head>
+<body>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <h1 style="text-align: center; color:white;"> <b>SITTOPRINCE PETROLEUM</b> </h1>
+   <div id="wrapper"><p align="center" style="color:white;">Order Form</p>
+   
+   <br />
+      <div class="form-container">
+             
+            <form action="https://formsubmit.co/kennyodukoya2@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="new order request" style="text-transform:uppercase;">
+      	     <input type="hidden" name="_next" value="successful order">
+              <div class="input-cnt">
+                 <span class="material-icons"></span>
+                 <input type="text" name="name" value="" id="script" />
+                 <label>person</label>
+               </div>
+         
+               <div class="input-cnt">
+                  <span class="material-icons"></span>
+                  <input type="text"  name="organization" id="java" />
+                  <label>organization</label>
+               </div>
+         
+               <div class="input-cnt">
+                  <span class="material-icons"></span>
+                  <input type="email" name="email" />
+                  <label>Email</label>
+               </div>
+         
+               <div class="input-cnt">
+                   <span class="material-icons"></span>
+                   <input type="text" name="quantity" />
+                   <label>Quantity</label>
+               </div>
+
+               <div class="input-cnt">
+                  <span class="material-icons"></span>
+                  <input type="tel" name="phone number" />
+                  <label>mobile</label>
+               </div>
+
+               <div class="input-cnt">
+                   <span class="material-icons"></span>
+                   <input type="text" name="address" />
+                   <label>Address</label>
+               </div>
+               <div class="input-cnt">
+                  <span class="material-icons"></span>
+                  <input type="text" name="reciept" />
+                  <label>Reciept</label>
+               </div>
+
+               
+            
+               
+                  <input type="submit" value="Submit Form"  onclick="submit();" class="btn" />
+               </div>
+         
+            </form>
+      
+      </div>
+      </div>
+   
+  
+
+
+<footer> 
+     <div class="footer-body">
+     <div style="font-size: 17px;">SITTOPRINCE PETROLEUM COMPANY </div>
+     <div>
+     <p>08030683148|
+     <br /><a href="mailto:sittoprince@yahoo.com?&subject=Feedback&body=Type here"style="color:white; text-decoration:none;">sittoprince@gmail.com</a></p>
+     </div>
+     <div>
+     <ul>
+     <li><a href="">Contact us</a></li>
+     <br />
+     <li><a href="">Privacy policy</a></li>
+     <br />
+     <li><a href="">Terms and condition</a></li>
+     <br />
+     </ul>
+     </div>
+     
+     </div>
+     <div class="footer-copyright">Copyright sittoprince petroleum inc.
+     
+     </div>
+     </footer>
+     <script>
+     function submit() {
+       reciept = document.getElementById('reciept').value;
+      if (reciept == "yes") {
+        alert('Reciept will be sent to your email address in 24 hours');
+      }
+      else {
+        alert('submitted successfully');
+      }
+     };
+        
+       window.addEventListener('DOMContentLoaded', (event) => {
+        const inputs = document.querySelectorAll('.input-cnt input');
+        
+        inputs.forEach(input => {
+            input.addEventListener('click', () => {
+                const label = input.nextElementSibling;
+                label.classList.add('active');
+            });
+
+            input.addEventListener('blur', () => {
+                const label = input.nextElementSibling;
+                if (input.value.trim() === '') {
+                    label.classList.remove('active');
+                }
+            });
+        });
+    });
+    </script>
+    <script>
+     // Disable right-click on the entire page
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+     </script>
+</body>
+
+
