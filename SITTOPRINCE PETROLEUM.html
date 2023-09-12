@@ -4,7 +4,7 @@
 
 <style type="text/css">
 
-body { background:url(picture2.png);
+body { background: url(picture1.png);
        color : white;
        min-height : 100vh;
        
@@ -82,7 +82,7 @@ body { background:url(picture2.png);
       align-items: left;
       font-weight: bold;
       border: 0;
-      font-size:2em;
+      font-size:1.6em;
       margin-top:35px;
     }
     
@@ -102,9 +102,9 @@ body { background:url(picture2.png);
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
 a#lol  { color:white ;
 
-     text-decoration:none;
 
      }
 a {color: white;
@@ -115,6 +115,7 @@ table { border-color :white;
      }
  Img {height: 170px;
        Width: 250px;
+       margin-bottom:10px;
        }
       * {
          box-sizing: border-box;
@@ -224,18 +225,27 @@ table { border-color :white;
          width: 200px;;
          height:auto;
          padding-bottom:0.1px;
+         padding-top:1px;
          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-              border:solid;
-              border-radius:5px;
+         border:none;
+      }
+      header {
+        background:transparent;
+        height:50px;
+        backdrop-filter:blur(30px);
+        
+      }
+      .header {
+        padding-top:10px;
+        padding-left:25px;
+      }
+      center {
+         margin-top:70px;
       }
 
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<marquee><h1 fontsize="10px" fontcolor="white">SITTOPRINCE PETROLEUM</h1></marquee>
-
-
-
-<center><hr width="50%" /></center>
+<header>
 
 <div class="dropdown">
   
@@ -248,20 +258,28 @@ table { border-color :white;
     </button>
     <div class="dropdown-content">
       <div class="close">
-        <button id="closeButton">X</button>
+        <button id="closeButton">×</button>
       </div>
-      <a href="online interview.html">online interview</a>
-      <a href="online order.html">online order</a>
+      <a href="file:///storage/emulated/0/online interview.html">online interview</a>
+      <a href="file:///storage/emulated/0/online order.html">online order</a>
     </div>
   </div>
+  <div class="header">
+<marqee><strong style="font-size:25px; color:white; ">SITTOPRINCE PETROLEUM</strong></marquee>
+</div>
+</header>
+
+
+
+
+
 
 <body>
-<i><p align="right">CEO :Mr Adeniyi Odukoya </p></i>
+
 
 <center><font family="sanserif" color="white">Home page</font></center>
 
 <BR />
-
 <BR />
 
 <P ALIGN="CENTER"><B><I>RECENT FUEL PRICES FROM DEPOT</I></B></P>
@@ -313,16 +331,15 @@ table { border-color :white;
 </TR>
 
 </TABLE>
-    <br>
 <center>
-<div id="dem"><u><center>ABOUT US<center></u></div>
+<div id="dem"><u><H1 align="center">ABOUT US</H1></u></div>
 </center>
 <center>
 <br />
 
 <div id="dema">
 
-<font > 
+<font size="5px"> 
 
 <b>SITTOPRINCE petroleum </b>is a company of great petrol quality, it get its petroleum hydrocarbons from pure and refined crude oil.The CEO Mr David Adeogun is an experienced dealer in petroleum product and has three active filling stations in different location in ogun state, nigeria.<br />  
 
@@ -337,12 +354,11 @@ You can also order directly from the online order link above at the menu bar.We 
 
 </body>
 
-<div align="center"><img src="sittoprince.png" del="SITTOPRINCE petroleum logo" alt="SITTOPRINCE petroleum logo" align="center"></img></div>
-<br>
-<br>
+<div align="center"><img src="file:///storage/emulated/0/SITTOPRINCE PETROLEUM.png" del="SITTOPRINCE petroleum logo" alt="SITTOPRINCE petroleum logo" align="center"></img></div>
+
 <footer> 
    <div class="footer-body">
-   <div>SITTOPRINCE PETROLEUM COMPANY </div>
+   <div style="">SITTOPRINCE PETROLEUM COMPANY </div>
    <div>
    <p>08030683148 <br /><a id="lol" href="mailto:SITTOPRINCE@yahoo.com?&subject=Feedback&body=Type here">SITTOPRINCE@gmail.com</a></p>
    </div>
@@ -383,5 +399,7 @@ You can also order directly from the online order link above at the menu bar.We 
     }
   });
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"> </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
