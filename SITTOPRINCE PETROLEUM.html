@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<title>Home page</title>
+
+<style type="text/css">
+
+body { background: linear-gradient(to top right, 
+    #FFFFFF 0%, /* White color stop */
+    #E6F7FF 5%,
+    #CCE5FF 10%,
+    #B3D4FF 15%,
+    #99C2FF 20%,
+    #80B1FF 25%,
+    #66A0FF 30%,
+    #4C8EFF 35%,
+    #338DFF 40%,
+    #1A7CFF 45%,
+    #007AFF 50%, /* Light blue color stop */
+    #0066CC 55%,
+    #0052B3 60%,
+    #003E99 65%,
+    #002A80 70%,
+    #001666 75%,
+    #000D4C 80%,
+    #000933 85%,
+    #000119 90%,
+    #000000 95%, /* Final shade, almost black */
+    #000000 100%
+);
+       color : white;
+       min-height : 100vh;
+       
+    }
+.dropdown {
+      position: absolute;
+      margin-left: 20px; /* Adjust the position as needed */
+      top: 17%; /* Adjust the position as needed */
+      transform: translateY(-50%);
+    }
+    
+    .dropdown button {
+      background-color: white;
+      color: #003E99;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      outline: none;
+      
+    }
+    .dropdown button:hover {
+      border: none;
+      outline: none;
+    }
+    
+    .dropdown button .line {
+      width: 25px;
+      height: 3px;
+      background-color: #003E99;
+      margin: 3px;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: transparent;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border:solid;
+      border-radius:7px;
+      backdrop-filter: blur(5px);
+      overflow-y:hidden;
+    }
+    
+    .dropdown-content .close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px;
+    }
+    
+    .dropdown-content .close button {
+      background-color: white;
+      color: #003E99;
+      border: none;
+      width:20px;
+      height:20px;
+      border-bottom-left-radius: 7px;
+      display:flex;
+      justify-content: center;
+      font-size: 12px;
+      top:0;
+      right:0;
+      position: absolute;
+      align-items: center;
+      font-weight: bold;
+      border-top-right-radius: 5px;
+      border: 2px;
+      border-color:#003E99;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    .dropdown-content a {
+      color: #002A80;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #002A80;
+      color:white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+a#lol  { color:white ;
+
+       font-size :30px;
+
+     }
+a {color: white;
+}
+
+table { border-color :white;
+
+     }
+ Img {height: 250px;
+       Width: 350px;
+       }
+      * {
+         box-sizing: border-box;
+      }
+       body {
+         margin:0;
+         padding:0;
+      }
+      /* Customize the scrollbar width and color */
+   ::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+  }
+
+   :-webkit-scrollbar-thumb {
+    background: #888; /* Customize the scrollbar color */
+  }
+      main {
+         flex: 1 0 auto;
+      }
+      footer {
+         bottom:0;
+         color: white;
+         background: black;
+         position: relative; /* required to position the copyright at the bottom */
+         font-size:80%;
+         overflow-y:auto;
+         left:0;
+         width:100%;
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 40px;
+         background: white;
+         color: black;
+         /* positions the copyright at the bottom of the footer */
+         padding: 10px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+      }
+      .footer-body {
+         margin-bottom: 40px;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 20px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 150%;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 20px;
+         text-align: center;
+      }
+   .footer-body li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 7px;
+      }
+      div#dema {#80B1FF 25%,
+    #66A0FF 30%,
+    #4C8EFF 35%,
+    #338DFF 40%,
+    #1A7CFF 45%,
+    #007AFF 50%, /* Light blue color stop */
+    #0066CC 55%,
+    #0052B3 60%,
+    #003E99 65%,
+    #002A80 70%,
+    #001666 75%,
+    #000D4C 80%,
+    #000933 85%,
+);
+         color:white;
+         text-align:center;
+         width:80%;
+         height:auto;
+         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+      }
+      div#dem{#338DFF 40%,
+    #1A7CFF 45%,
+    #007AFF 50%, /* Light blue color stop */
+    #0066CC 55%,
+    #0052B3 60%,
+    #003E99 65%,
+    #002A80 70%,
+    #001666 75%,
+    #000D4C 80%,
+         color:#173459;
+         text-align:center;
+         width: 200px;;
+         height:auto;
+         padding-bottom:0.1px;
+         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+      }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<marquee><h1 fontsize="20px" fontcolor="white" editable>SITTOPRINCE PETROLEUM</h1></marquee>
+
+
+
+<center><hr width="50%" /></center>
+
+<div class="dropdown">
+  
+    <button>
+      <span class="line"></span>
+      
+      <span class="line"></span>
+      
+      <span class="line"></span>
+    </button>
+    <div class="dropdown-content">
+      <div class="close">
+        <button id="closeButton">X</button>
+      </div>
+      <a href="file:///storage/emulated/0/online interview.html">online interview</a>
+      <a href="file:///storage/emulated/0/online order.html">online order</a>
+    </div>
+  </div>
+
+<body>
+<i><p align="right">CEO :Mr David Adeogun </p></i>
+
+<center><font size="15px" family="sanserif" color="white">Home page</font></center>
+
+<BR />
+
+<BR />
+
+<P ALIGN="CENTER"><B><I>RECENT FUEL PRICES FROM DEPOT</I></B></P>
+
+<TABLE BORDER="2" ALIGN="CENTER">
+
+<TH>DATE</TH>
+
+<TH>PMS</TH>
+
+<TH>AGO</TH>
+
+<TH>KEROSENE</TH>
+
+<TR>
+
+<TD>23/12/22</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD></TD>
+
+</TR>
+
+<TR>
+
+<TD>24/12/22</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD></TD>
+
+</TR>
+
+<TR>
+
+<TD>25/12/22</TD>
+
+<TD></TD>
+
+<TD></TD>
+
+<TD></TD>
+
+</TR>
+
+</TABLE>
+<center>
+<div id="dem"><u><H1 align="center">ABOUT US</H1></u></div>
+</center>
+<center>
+<br />
+
+<div id="dema">
+
+<font size="5px"> 
+
+<b>SITTOPRINCE petroleum </b>is a company of great petrol quality, it get its petroleum hydrocarbons from pure and refined crude oil.The CEO Mr David Adeogun is an experienced dealer in petroleum product and has three active filling stations in different location in ogun state, nigeria.<br />  
+
+You can also order directly from the online order link above at the menu bar.We appreciate you for visiting our website. 
+
+</font>
+
+</div>
+</center>
+
+<br /><br /><br /><br />
+
+</body>
+
+<div align="center"><img src="file:///storage/emulated/0/SITTOPRINCE PETROLEUM.png" del="SITTOPRINCE petroleum logo" alt="SITTOPRINCE petroleum logo" align="center"></img></div>
+
+<footer> 
+   <div class="footer-body">
+   <div style="font-size: 30px;">SITTOPRINCE PETROLEUM COMPANY </div>
+   <div>
+   <p style="font-size: 30px;">08030683148 <br /><a id="lol" href="mailto:SITTOPRINCE@yahoo.com?&subject=Feedback&body=Type here">SITTOPRINCE@gmail.com</a></p>
+   </div>
+   <div>
+   <ul>
+   <a href="" id="lol">Contact us</a>
+   <br />
+   <a href="" id="lol">Privacy policy</a>
+   <br />
+   <a href="" id="lol">Terms and condition</a>
+   <br />
+   </ul>
+   </div>
+   
+   </div>
+   <div class="footer-copyright">Copyright SITTOPRINCE petroleum inc.
+   
+   </div>
+   </footer>
+   <script>
+        // Disable right-click on the entire page
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        var closeButton = document.getElementById("closeButton");
+    var dropdownContent = document.querySelector(".dropdown-content");
+
+    closeButton.addEventListener("click", function() {
+      dropdownContent.style.display = "none";
+    });
+     var button = document.querySelector(".dropdown button");
+
+  button.addEventListener("click", function() {
+    if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+      dropdownContent.style.display = "block";
+    } else {
+      dropdownContent.style.display = "none";
+    }
+  });
+    </script>
+
+
