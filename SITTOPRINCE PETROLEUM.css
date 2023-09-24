@@ -1,0 +1,212 @@
+.navbar {
+    position: fixed;
+    transition: 1s;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    font-family: Germania;
+    cursor: pointer;
+}
+
+.icon-bar {
+    background-color: #000;
+
+}
+
+.nav {
+    font-family: Lithos Pro;
+    color: #fff;
+    padding: 10px 2px;
+    text-align: right;
+}
+
+.nav li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color:silver;
+}
+
+.nav li:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+.nav li:hover {
+  background:none;
+}
+
+.nav li:hover:after {
+    transform: scaleX(1);
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+@media(max-width: 720px) {
+    .navbar-collapse {
+        background: transparent;
+        backdrop-filter: blur(20px);
+    }
+  }
+    .navbar.navbar-fixed-top.container-fluid{
+    backdrop-filter: blur(50px);
+    background:transparent;
+    }
+    .navbar-toggle.navbar-default {
+      background: transparent;
+      backdrop-filter: blur(20px);
+      border:none;
+      color:white;
+    }
+  .navbar-toggle.navbar-default  .icon-bar{
+    color:white;
+  }
+  .nav.navbar-nav a {
+    color:silver;
+  }
+  .collapse.navbar-right.navbar-collapse#myNavbar {
+    background: transparent;
+    backdrop-filter: blur(20px);
+  }
+  body { background: url(picture3.png);
+       color : white;
+       min-height : 100vh;
+       
+    }
+
+a#lol  { color:white ;
+
+
+     }
+a {color: white;
+}
+
+table { border-color :white;
+
+     }
+ Img {height: 170px;
+       Width: 250px;
+       margin-bottom:10px;
+       }
+      * {
+         box-sizing: border-box;
+      }
+       body {
+         margin:0;
+         padding:0;
+      }
+      /* Customize the scrollbar width and color */
+   ::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+  }
+
+   :-webkit-scrollbar-thumb {
+    background: #888; /* Customize the scrollbar color */
+  }
+      main {
+         flex: 1 0 auto;
+      }
+      footer {
+         bottom:0;
+         color: white;
+         background: black;
+         position: relative; /* required to position the copyright at the bottom */
+         font-size:80%;
+         overflow-y:auto;
+         left:0;
+         width:100%;
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 40px;
+         background: white;
+         color: black;
+         /* positions the copyright at the bottom of the footer */
+         padding: 10px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+      }
+      .footer-body {
+         margin-bottom: 40px;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 20px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 150%;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 20px;
+         text-align: center;
+      }
+   .footer-body li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 7px;
+      }
+      div#dema {
+         color:white;
+         text-align:center;
+         width:80%;
+         height:auto;
+         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+      }
+      div#dem{
+         color:white;
+         text-align:center;
+         width: 200px;;
+         height:auto;
+         padding-bottom:0.1px;
+         padding-top:1px;
+         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+         border:none;
+      }
+      header {
+        background:transparent;
+        height:50px;
+        backdrop-filter:blur(30px);
+        
+      }
+      .header {
+        padding-top:10px;
+        padding-left:25px;
+      }
+      center {
+         margin-top:70px;
+      }

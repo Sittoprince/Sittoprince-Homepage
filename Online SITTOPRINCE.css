@@ -1,0 +1,254 @@
+.navbar {
+    position: fixed;
+    transition: 1s;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    font-family: Germania;
+    cursor: pointer;
+}
+
+.icon-bar {
+    background-color: #000;
+
+}
+
+.nav {
+    font-family: Lithos Pro;
+    color: #fff;
+    padding: 10px 2px;
+    text-align: right;
+}
+
+.nav li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color:silver;
+}
+
+.nav li:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+.nav li:hover {
+  background:none;
+}
+
+.nav li:hover:after {
+    transform: scaleX(1);
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+@media(max-width: 720px) {
+    .navbar-collapse {
+        background: transparent;
+        backdrop-filter: blur(20px);
+    }
+  }
+    .navbar.navbar-fixed-top.container-fluid{
+    backdrop-filter: blur(50px);
+    background:transparent;
+    }
+    .navbar-toggle.navbar-default {
+      background: transparent;
+      backdrop-filter: blur(20px);
+      border:none;
+      color:white;
+    }
+  .navbar-toggle.navbar-default  .icon-bar{
+    color:white;
+  }
+  .nav.navbar-nav a {
+    color:silver;
+  }
+  .collapse.navbar-right.navbar-collapse#myNavbar {
+    background: transparent;
+    backdrop-filter: blur(20px);
+  }
+main {
+
+
+
+         flex: 1 0 auto;
+
+      }
+      footer {
+         color: white;
+         background: transparent;
+         position: relative; /* required to position the copyright at the bottom */
+         font-size:80%;
+         margin: 0;
+         backdrop-filter: blur(5px);
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 20px;
+         background: white;
+         color: #162938;
+         /* positions the copyright at the bottom of the footer */
+         padding: 3px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         font-size: 15px;
+         margin: 0;
+      }
+      .footer-body {
+         margin-bottom: 0;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 20px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 150%;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 0px;
+         text-align: center;
+         font-size: 5px;
+      }
+      .footer-body li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 7px;
+         font-size:20px;
+         font-size: 15px;
+      }
+       * {  box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         
+      }
+      body{
+        background: url(picture.png);
+        min-height: 100vh;
+      }
+      #wrapper > div {
+        position:relative;
+         width:320px;
+         height:justify;
+         background: transparent;
+         color: white;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         border: 2px solid rgba(255,255,255,.5);
+         border-radius:10px;
+         margin-left: 20px;
+        justify-content: center;
+        align-items: center; 
+        backdrop-filter: blur(20px);
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+      .form-container {
+         justify-content: center;
+         align-items: center;
+         display:flex;
+         width:100%;
+         padding:40px;
+      }
+      .input-cnt{
+        position:relative;
+        width:260px;
+        height:50px;
+        border-bottom:2px solid;
+        margin:30px 0;
+      }
+      .input-cnt label {
+        position:absolute;
+        top:50%;
+        left:5px;
+        transform:translateY(-50%);
+        transition:5s;
+        font-size:1em;
+        font-weight:500;
+        pointer-events: none;
+        transition:.5s;
+      }
+      .input-cnt input {
+        width:100%;
+        height:100%;
+        background:transparent;
+        padding:0 35px 0 5px;
+        font-size:1em;
+        outline:none;
+        font-weight:600;
+        border:0;
+      }
+        .input-cnt label.active {
+       top: -5px;
+       font-size: 0.8em; /* Optional: reduce label size when moved up */
+}
+      .btn {
+        width:100%;
+        height:45px;
+        background: white;
+        border:0;
+        outline:0;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:1em;
+        color:#000;
+        font-weight: 500;
+      }
+       .close {
+        position:absolute;
+        top:0;
+        right:0;
+        height:30px;
+        width:30px;
+        background:#fff;
+        color:#162938;
+        font-size:1.5em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+        cursor:pointer;
+        z-index:1;
+        text-decoration: none;
+        border-bottom-left-radius: 10px;
+      }
+       .close a {
+        text-decoration: none;
+        color:#162938;
+      }
